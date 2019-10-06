@@ -1,0 +1,25 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    line-height: 20pt;
+    text-align: center;
+    letter-spacing: 1pt;
+    margin: 10%;
+    border: 3px solid rgb(126, 150, 224);
+    border-radius: 15px;
+    padding: 25px;
+}
+#title {
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 1pt;
+    color: rgb(126, 150, 224);
+}
+.menu {
+    background-color: rgb(126, 150, 224);
+    padding: 50px;
+    text-align: justify;
+    letter-spacing: 2pt;
+    font-weight: 700;
+    line-height: 30pt;
+    border-radius: 15px;
+}

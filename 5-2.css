@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(250, 159, 255);
+}
+.body {
+    margin: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+#menu {
+    border: solid black 2px;
+    padding: 20px;
+    text-align: justify;
+    position: relative;
+    width: 500px;
+    margin-left: 50%;
+    font-size: 12px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+#menu:hover {
+    border: solid rgb(52, 159, 35) 6px;
+    color: rgb(52, 159, 35);
+}
+#title {
+    font-family: 'Metal Mania', cursive;
+    position: relative;
+    margin-left: 50%;
+    font-size: 40pt;
+    text-transform: uppercase;
+    color: rgb(52, 159, 35);
+    width: 500px;
+    box-sizing: border-box;
+}
+#back {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: absolute;
+}
+.poem {
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes float {
+    from {margin-top:-200px;}
+    to {margin-top: 0px;}
+}
+@media only screen and (max-width: 600px) {
+    #title {
+        margin-left: 0%;
+        font-size: 20pt;
+    }
+    #menu {
+        margin-left: 0%;
+        width: 300px;
+    }
+    .poem {
+        position: relative;
+        top: 250px;
+    }
+    body {
+        height: 130vh;
+    }
+}

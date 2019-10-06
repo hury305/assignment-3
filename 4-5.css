@@ -1,0 +1,23 @@
+body {
+    text-align: right;
+    margin: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1pt;
+    line-height: 20pt;
+    background-color: rgb(255, 209, 171);
+}
+.list {
+    text-align: left;
+    border-left: 2pt solid rgb(45, 88, 200);
+    padding-left: 15px;
+}
+#title {
+    font-size: 50pt;
+    text-align: center;
+    color: rgb(45, 88, 200);
+}
+.text {
+    font-style: italic;
+}

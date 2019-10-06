@@ -1,0 +1,39 @@
+body {
+    margin: 10%;
+    font-family: 'Miriam Libre', sans-serif;
+}
+.all {
+    text-align: center;
+}
+.title {
+    color: rgb(255, 0, 212);
+}
+.level4 {
+    display: inline-block;
+    left: 200px;
+    margin: 30px;
+}
+.level5 {
+    display: inline-block;
+    left: 500px;
+    margin: 30px;
+}
+.list {
+    padding-left: 0;
+}
+#bold {
+    font-weight: 700;
+}
+li {
+    list-style: none;
+    border: solid black 3pt;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+li:hover {
+    border: solid rgb(255, 0, 212) 3pt;
+}

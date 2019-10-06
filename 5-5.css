@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10%;
+    background-color: rgb(212, 165, 235);
+    animation-name: bg-change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.title {
+    font-family: 'Anton', sans-serif;
+    font-size: 30pt;
+    color: rgb(122, 34, 170);
+}
+.columns {
+    border: solid rgb(122, 34, 170) 3pt;
+    width: 700px;
+    margin-left: calc(50% - 350px);
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.list {
+    list-style: none;
+    line-height: 12px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    padding-left: 0;
+}
+li {
+    background-color: rgb(212, 165, 235);
+    border: solid rgb(122, 34, 170) 3pt;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    margin: 5px;
+    width: 240px;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 10pt;
+}
+li:hover {
+    background-color: rgb(122, 34, 170);
+}
+@keyframes bg-change {
+    from {background-color: rgb(212, 165, 235);}
+    to {background-color: rgb(252, 191, 87);}
+}
+@media only screen and (max-width: 600px) {
+    .columns {
+        border: none;
+        background-color: transparent;
+    }
+    li {
+        display: block;
+    }
+    .list {
+        margin-left: calc(50% - 120px);
+    }
+}

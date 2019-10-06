@@ -1,0 +1,55 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    height: 100vh;
+}
+.box {
+    margin: 10%;
+}
+#title {
+    font-size: 15pt;
+    width: 150px;
+    height: 150px;
+    border: 2pt solid black;
+    padding: 20px;
+    border-radius: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 20pt;
+    animation-name: color-change;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.list {
+    font-style: italic;
+    animation-name: font-color-change;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.poem {
+    position: relative;
+    left: 300px;
+    top: -200px;
+    width: 400px;
+}
+@keyframes color-change {
+    from {background-color: rgb(255, 219, 185);}
+    to {background-color: rgb(157, 173, 255);}
+}
+@keyframes font-color-change {
+    from {color: rgb(255, 219, 185);}
+    to {color: rgb(157, 173, 255);}
+}
+@media only screen and (max-width: 600px) {
+    #title {
+        border-radius: 0%;
+    }
+    .poem {
+        left: 0px;
+        top: 50px;
+    }
+}

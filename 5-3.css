@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5%;
+    margin-left: calc(50% - 190px);
+    background-color: rgb(255, 243, 203);
+}
+.title {
+    font-family: 'Titan One', cursive;
+    font-size: 25pt;
+    color: rgb(240, 84, 50);
+}
+.title:hover {
+    color: rgb(99, 135, 240);
+}
+li:hover {
+    font-weight: 700;
+    color: rgb(99, 135, 240);
+}
+.list {
+    border: 2pt solid rgb(240, 84, 50);
+    padding: 20px;
+    width: 380px;
+    padding-left: 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    animation-name: border;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes border {
+    from {border-radius: 50px;}
+    to {border-radius: 0px;}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(255, 209, 234);
+    }
+    .title {
+        color: rgb(99, 135, 240);
+    }
+    .title:hover {
+        color: rgb(240, 84, 50);
+    }
+    .list {
+        border: solid rgb(99, 135, 240);
+    }
+    li:hover {
+        color: rgb(240, 84, 50);
+    }
+}
